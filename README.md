@@ -15,7 +15,7 @@ Before starting, ensure you have the following:
 To install everything automatically, open Termux and run:
 
 ```bash
-pkg install -y git && git clone https://github.com/CrimsonDevil333333/openclaw-android-setup.git ~/openclaw-android-setup && bash ~/openclaw-android-setup/setup_claw.sh
+pkg install -y git && git clone https://github.com/CrimsonDevil333333/openclaw-android-setup.git ~/openclaw-android-setup && cd ~/openclaw-android-setup && chmod +x *.sh && ./setup_claw.sh
 ```
 
 ---
@@ -44,7 +44,9 @@ Use this whenever a new OpenClaw version is released.
 1. **Install Termux:** Download it from [F-Droid](https://f-droid.org/en/packages/com.termux/) (do not use the Play Store version).
 2. **Run the Setup Script:**
    ```bash
-   bash setup_claw.sh
+   cd ~/openclaw-android-setup
+   chmod +x *.sh
+   ./setup_claw.sh
    ```
 3. **Run Onboarding:**
    After the script finishes, run:
